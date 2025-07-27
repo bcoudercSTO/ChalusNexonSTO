@@ -314,8 +314,13 @@
 
         function style_Perimetre_OPAH_4_0() {
             return {
-                pane: 'pane_Perimetre_OPAH_4',
-                interactive: false,
+                 pane: 'pane_Perimetre_OPAH_4',
+        	color: 'rgba(0, 128, 0, 1.0)',    // contour vert foncé
+        	weight: 2,
+        	fill: true,
+        	fillColor: 'rgba(0, 255, 0, 0.3)',// vert clair transparent
+        	fillOpacity: 0.3,
+        	interactive: false
             }
         }
         map.createPane('pane_Perimetre_OPAH_4');
@@ -351,7 +356,12 @@
         function style_Perim_faade_5_0() {
             return {
                 pane: 'pane_Perim_faade_5',
-                interactive: false,
+        	color: 'rgba(0, 0, 200, 1.0)',    // contour bleu foncé
+        	weight: 2,
+        	fill: true,
+        	fillColor: 'rgba(0, 0, 255, 0.3)', // bleu clair transparent
+        	fillOpacity: 0.3,
+        	interactive: false
             }
         }
         map.createPane('pane_Perim_faade_5');
